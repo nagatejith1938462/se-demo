@@ -1,14 +1,18 @@
 # se-demo
 
 Map<String,String> classList = new Hashmap<String,String>();
-public classGrades(){
+
+public classGrades()
+{
 classList.put("Bob","A");
 classList.put("Mary","C");
 classList.put("Sarah","B");
 classList.put("Philip","A");
 classList.put("Greg","F");
 }
-public void ClassList(){
+
+public void ClassList()
+{
 Iterator<Entry<String,String>> entries=classList.entrySet().iterator();
 while(entries.hasNext())
 {
@@ -16,7 +20,9 @@ Entry<String,String> entry=entries.next();
 System.out.println("Key = " +entry.getKey() + ", Value = " + entry.getvalue());
 }
 }
-public void ClassList2(){
+
+public void ClassList2()
+{
 for(Map.Entry<String,String> entry:classList.entryset())
 {
 System.out.println("Key = " +entry.getKey() + ", Value = " + entry.getvalue());
@@ -29,7 +35,8 @@ System.out.println("Value =" +value);
 }
 }
 
-public static void main(String[] args){
+public static void main(String[] args)
+{
 ClassGrades myClassList= new classGrades();
 myClassList.printClassList();
 
